@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: '@project.artifactId@'
+  profiles:
+    active: h2
+  jackson:
+    default-property-inclusion: always
