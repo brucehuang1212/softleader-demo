@@ -14,5 +14,4 @@ spring:
     properties:
       hibernate:
         hbm2ddl:
-          import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
-          import_files: data.sql,ifrs17_gi_Act_init_pos_policy.sql
+          import_files: data.sql

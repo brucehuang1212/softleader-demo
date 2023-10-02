@@ -1,11 +1,10 @@
 package com.example.demo.repository.entity;
 
 import com.example.demo.enums.LeaveType;
+import jakarta.persistence.*;
 import lombok.*;
-import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.Comment;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity

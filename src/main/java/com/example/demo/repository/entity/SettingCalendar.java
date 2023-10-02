@@ -1,10 +1,10 @@
 package com.example.demo.repository.entity;
 
 import com.example.demo.enums.YesNo;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.Comment;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
