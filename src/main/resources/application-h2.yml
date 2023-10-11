@@ -13,5 +13,8 @@ spring:
     defer-datasource-initialization: true
     properties:
       hibernate:
+        temp:
+          use_jdbc_metadata_defaults: true
         hbm2ddl:
+          auto: update
           import_files: data.sql

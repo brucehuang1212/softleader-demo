@@ -5,3 +5,6 @@ spring:
     active: h2
   jackson:
     default-property-inclusion: always
+
+server:
+  port: 5678

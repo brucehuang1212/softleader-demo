@@ -17,7 +17,7 @@ public class SettingCalendar {
 
   @Id
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqSettingCalendar")
-  @SequenceGenerator(name = "seqSettingCalendar", sequenceName = "ADP.SEQ_SETTING_CALENDAR", allocationSize = 1)
+  @SequenceGenerator(name = "seqSettingCalendar", sequenceName = "DEMO.SETTING_CALENDAR_SEQ", allocationSize = 1, initialValue = 1)
   @Comment("ID")
   @Column(name = "ID")
   Long id;
@@ -26,11 +26,12 @@ public class SettingCalendar {
   @Column(name = "DATE")
   LocalDate date;
 
-  @Comment("日期")
+  @Comment("是否為假日")
   @Column(name = "IS_HOLIDAY")
+  @Enumerated(EnumType.STRING)
   YesNo isHoliday;
 
-  @Comment("名稱")
+  @Comment("日期備註")
   @Column(name = "DESC")
   String desc;
 
